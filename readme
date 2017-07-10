@@ -1,0 +1,25 @@
+Scripts written to automate tedious functions for the Art Team. FATALITY v3 is current
+
+"Specify Master" written by Adam Dehaven. Modified by Steve K for SG use. See module folder "Specify Master" for source code.
+
+Full Script > Fatality is the most important to the Art Team. Its a combination of multiple modules to complete multiple tasks all at once. The modules were tests for each piece to double check functionality before they were combined.
+
+Fatality v3 script does the following when executed: 
+1. Finds and selects all magenta Die Lines found in current document
+2. Creates art boards for every selected Die Line at their geometric bound in order of Die Line placement 
+3. Measures the die line height and width, applies labels for height and width to the hundredth decimal place value
+4. Prompts the user for Folder/File name  
+5. Searches the StickerGiant server (/Volumes/ShrData/server_docs/custom_stickers/Art For Robb) for a folder matching step4 user input
+6a. If no folder exists creates a folder based on step4 user input
+6b. If folder exists matching step4 user input script will use the found folder to save revisions
+7a. If 6a, creates a .pdf file with step4 user input (Example: steve.pdf)
+7b. If 6b, creates a .pdf file with step4 user input + 2 (Example: steve2.pdf) (incrementally increases by 1 per 5,7 loop) 
+8. Outlines all text found in document, including dimension labels
+9a. If 6a, creates a .ai file with step4 user input (Example: steve.ai)
+9b. If 6b, creates a .ai file with step4 user input + 2 (Example: steve2.ai) (incrementally increases by 1 per 5,9 loop) 
+
+Resources:
+
+Scripting reference guide: http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/pdf/illustrator/scripting/CC/Illustrator%20Scripting%20Reference%20-%20JavaScript.pdf
+
+Community for getting started: https://forums.adobe.com/community/illustrator/illustrator_scripting
